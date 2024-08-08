@@ -1,3 +1,17 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import *
+
+
+class ArticlesAdmin(admin.ModelAdmin):
+    list_display = ('title', 'description', 'categories')
+
+
+admin.site.register(Articles, ArticlesAdmin)
+admin.site.register(Categories)
+
+
+
+
+
+
