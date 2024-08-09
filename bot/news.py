@@ -4,7 +4,7 @@ import json
 
 from aiogram.types import ParseMode
 
-token = '7126703168:AAF5lvyDWcsOMjzMueS9oMWS9dphSQ_HNgg'
+token = '#'
 bot = Bot(token=token)
 dp = Dispatcher(bot)
 dp.middleware.setup(LoggingMiddleware())
